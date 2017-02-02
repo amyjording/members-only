@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root  'static_pages#home'
+  resources :posts
+  root  'posts#index'
   get    '/login',   to: 'static_pages#login'
 
   resources :users
