@@ -61,6 +61,11 @@ h2 {
   color: $gray-light;
 }
 
+h4 {
+text-align: center;
+padding-bottom: 20px;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -72,7 +77,13 @@ p {
 .navbar-inverse {
     background-color: #fff8f2;
     border-color: #fdc5b4;
-}
+    .navbar-nav  li {
+      a:hover {
+        color: #DF744A;
+      }
+    }
+  }
+
 
 #logo {
   float: left;
@@ -84,11 +95,12 @@ p {
   padding-top: 16px;
   font-weight: bold;
   &:hover {
-    color: $gray;
+    color: #DCB239;
     text-decoration: none;
     background-color: #fff8f2;
   }
 }
+
 
 /* sidebar */
 
@@ -127,6 +139,7 @@ aside {
   margin-top: 15px;
 }
 
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -164,6 +177,32 @@ input {
   }
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #DF744A;
+    border-color: #fff8f2;
+    &:hover {
+      color: #fff;
+      background-color: #DCB239;
+      border-color: #fff;
+      }
+    &:active {
+      color: #DF744A;
+      background-color: #fff8f2;
+      border-color: #fff;
+    }
+    &:active:hover {
+      color: #DF744A;
+      background-color: #fff8f2;
+      border-color: #fff;
+    }
+    &:focus {
+      color: #fff;
+      background-color: #DF744A;
+      border-color: #fff8f2;
+    }
+}
+
 #session_remember_me {
   width: auto;
   margin-left: 0;
@@ -173,7 +212,7 @@ input {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-dark;
+  border-top: 1px solid #FEDCD2;
   color: $gray-light;
   a {
     color: $gray;
@@ -204,4 +243,31 @@ footer {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+/* Posts Index */
+
+.posts {
+  list-style: none;
+  margin: 0;
+  li {
+    border: 1px solid #DCB239;
+    border-radius: 5px;
+    overflow: auto;
+    margin-bottom: 5px;
+    padding: 15px;
+    padding-right: 10px;
+    background-color: #FEDCD2;
+  }
+  li:nth-child(odd) {
+    background-color: #fff8f2;
+  }
+  li:nth-child(even) {
+    background-color: #FEDCD2;
+  }
+
+}
+
+.postwho {
+  color: #DF744A;
 }

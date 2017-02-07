@@ -1,6 +1,6 @@
 body {
   background-color: #BFD8D2;
-  color: #333;
+  color: #555;
   font-family: Lora, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -8,9 +8,9 @@ body {
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: Lora, verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
   margin: 33px;
 }
 
@@ -28,7 +28,7 @@ a {
   }
 
   &:hover {
-    color: #fff;
+    color: #DCB239;
     background-color: #000;
   }
 }
@@ -79,8 +79,8 @@ div {
   }
 
   ul li {
-    font-size: 12px;
-    list-style: square;
+    font-size: 16px;
+    list-style: none;
   }
 }
 
